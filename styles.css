@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PrimaryFont';
+    src: url("./resources/fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PrimaryFont';
+    src: url("./resources/fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'PrimaryFont';
+    src: url("./resources/fonts/Poppins/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+
+* {
+    font-family: "PrimaryFont", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    flex: 1;
+    padding: 30px;
+
+    .heading {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin-bottom: 16px;
+        }
+
+        .summary1 {
+            max-width: 75%;
+        }
+
+        .summary2 {
+            max-width: 70%;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #6C727F;
+            text-align: center;
+        }
+    }
+
+    .subscribe {
+        background-color: #FFF;
+        border-radius: 10px;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        > * {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input {
+            border: 1px solid rgba(208, 207, 207, 0.861);
+            background-color: #E5E7EB;
+            color: #000000;
+            text-align: center;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: #394150;
+        }
+
+        button {
+            border: none;
+            background-color: #284BCE;
+            color: #FFF;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .helper {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #394150;
+            padding: 0px 0px 10px 0px;
+        }
+    }
+}
+
+@media (max-width: 468px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .main .heading {
+        .summary1, .summary2 {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .main .subscribe .helper {
+        text-align: left;
+    }
+}
