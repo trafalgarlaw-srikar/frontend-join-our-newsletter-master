@@ -8,18 +8,21 @@
     font-family: 'PrimaryFont';
     src: url("./resources/fonts/Poppins/Poppins-Regular.ttf");
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'PrimaryFont';
     src: url("./resources/fonts/Poppins/Poppins-SemiBold.ttf");
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'PrimaryFont';
     src: url("./resources/fonts/Poppins/Poppins-Medium.ttf");
     font-weight: 500;
+    font-display: swap;
 }
 
 * {
