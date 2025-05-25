@@ -37,7 +37,9 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+
+    background-color: #F9FAFB;
 }
 
 h1 {
